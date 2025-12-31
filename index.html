@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Installation Guide for VirtualBox, Ubuntu, and NS-3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Network Simulation Lab</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#virtualbox">VirtualBox</a></li>
+            <li><a href="#ubuntu">Ubuntu</a></li>
+            <li><a href="#ns3">NS-3</a></li>
+            <li><a href="#verification">Verification</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+    <h1>Installation Guide for VirtualBox, Ubuntu, and NS-3</h1>
+
+    <p>
+        This guide presents a structured and step-by-step procedure for installing
+        <strong>VirtualBox</strong>, <strong>Ubuntu Linux</strong>, and the
+        <strong>NS-3 Network Simulator</strong>. These tools are widely used in
+        computer networks laboratories and research environments for network
+        simulation and protocol analysis.
+    </p>
+
+    <h2>Learning Objectives</h2>
+    <ul>
+        <li>Understand virtualization and network simulation concepts</li>
+        <li>Install and configure VirtualBox</li>
+        <li>Install Ubuntu Linux on a virtual machine</li>
+        <li>Install dependencies and build NS-3</li>
+        <li>Verify NS-3 installation using sample programs</li>
+    </ul>
+</section>
+
+<!-- ================= VIRTUALBOX ================= -->
+<section id="virtualbox">
+    <h2>Section 1: VirtualBox Installation</h2>
+
+    <h3>What is VirtualBox?</h3>
+    <p>
+        VirtualBox is an open-source virtualization software developed by Oracle
+        that allows multiple operating systems to run simultaneously on a single
+        physical machine using virtual machines.
+    </p>
+
+    <h3>Why VirtualBox is Required?</h3>
+    <ul>
+        <li>To run Ubuntu Linux on a Windows host system</li>
+        <li>To provide an isolated environment for NS-3</li>
+        <li>To avoid changes to the host operating system</li>
+    </ul>
+
+    <h3>System Requirements</h3>
+    <ul>
+        <li>64-bit processor with virtualization support</li>
+        <li>Minimum 8 GB RAM (recommended)</li>
+        <li>At least 20 GB free disk space</li>
+    </ul>
+
+    <h3>Installation Steps</h3>
+    <ol>
+        <li>
+            Visit the official website:
+            <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">
+                https://www.virtualbox.org
+            </a>
+            and download VirtualBox.
+        </li>
+        <li>Run the installer and follow the on-screen instructions.</li>
+        <li>Launch VirtualBox after successful installation.</li>
+    </ol>
+
+    <div class="screenshot">
+        <img src="images/virtualbox-site.png">
+        <p>Figure 1: VirtualBox Official Website</p>
+    </div>
+
+    <div class="screenshot">
+        <img src="images/virtualbox-download.png">
+        <p>Figure 2: VirtualBox Download Page</p>
+    </div>
+
+    <div class="screenshot">
+        <img src="images/virtualbox-manager.png">
+        <p>Figure 3: VirtualBox Manager Interface</p>
+    </div>
+
+    <h3>Creating Ubuntu Virtual Machine</h3>
+    <p>
+        A new virtual machine is created by selecting the Ubuntu ISO file
+        and configuring system resources.
+    </p>
+
+    <div class="screenshot">
+        <img src="images/virtualbox-vm-create.png">
+        <p>Figure 4: Creating Ubuntu Virtual Machine</p>
+    </div>
+
+    <div class="screenshot">
+        <img src="images/virtualbox-resource-alloc.png">
+        <p>Figure 5: Allocating RAM, CPU, and Disk Space</p>
+    </div>
+</section>
+
+<!-- ================= UBUNTU ================= -->
+<section id="ubuntu">
+    <h2>Section 2: Ubuntu Installation on VirtualBox</h2>
+
+    <h3>What is Ubuntu?</h3>
+    <p>
+        Ubuntu is a Linux-based open-source operating system widely used for
+        development, research, and networking applications due to its stability
+        and extensive package support.
+    </p>
+
+    <h3>Why Ubuntu for NS-3?</h3>
+    <ul>
+        <li>NS-3 is primarily supported on Linux platforms</li>
+        <li>Better dependency and package management</li>
+        <li>Stable and secure environment</li>
+    </ul>
+
+    <h3>Ubuntu ISO Download</h3>
+    <p>
+        Ubuntu Desktop ISO can be downloaded from:
+        <a href="https://ubuntu.com/download/desktop" target="_blank">
+            https://ubuntu.com
+        </a>
+    </p>
+
+    <div class="screenshot">
+        <img src="images/ubuntu-download.png">
+        <p>Figure 6: Ubuntu Desktop Download Page</p>
+    </div>
+
+    <h3>Installation Process</h3>
+    <div class="screenshot">
+        <img src="images/ubuntu-installation.png">
+        <p>Figure 7: Ubuntu Installation Setup</p>
+    </div>
+
+    <div class="screenshot">
+        <img src="images/ubuntu-desktop.png">
+        <p>Figure 8: Ubuntu Desktop Successfully Installed</p>
+    </div>
+
+    <h3>Post-Installation System Update</h3>
+    <div class="screenshot">
+        <img src="images/ubuntu-update.png">
+        <p>Figure 9: Updating Ubuntu System Packages</p>
+    </div>
+</section>
+
+<!-- ================= NS3 ================= -->
+<!-- ================= NS3 ================= -->
+<section id="ns3">
+    <h2>Section 3: NS-3 Installation</h2>
+
+    <h3>What is NS-3?</h3>
+    <p>
+        NS-3 is a discrete-event network simulator used for research and education
+        to analyze the behavior and performance of wired and wireless networks.
+        It is widely used in postgraduate studies and research projects.
+    </p>
+
+    <h3>Applications of NS-3</h3>
+    <ul>
+        <li>Network protocol analysis</li>
+        <li>Wireless and wired network simulations</li>
+        <li>Academic and research experimentation</li>
+    </ul>
+
+    <h3>Prerequisites and Dependencies</h3>
+    <p>
+        Before installing NS-3, the system must have required development tools
+        and libraries installed.
+    </p>
+    <ul>
+        <li>Ubuntu Linux</li>
+        <li>Python 3</li>
+        <li>C++ compiler (g++)</li>
+        <li>CMake and build-essential packages</li>
+    </ul>
+
+    <!-- STEP 1 -->
+    <h3>Step 1: Download NS-3 Source Code</h3>
+    <p>
+        The NS-3 source code is downloaded from the official NS-3 repository.
+        This ensures the latest stable version is obtained for installation.
+    </p>
+
+    <div class="screenshot">
+        <img src="images/ns3-download.png">
+        <p>Figure 10: NS-3 Official Download Page</p>
+    </div>
+
+    <!-- STEP 2 -->
+    <h3>Step 2: Extract NS-3 Source Files</h3>
+    <p>
+        After downloading, the NS-3 source archive is extracted to access
+        the source code required for building the simulator.
+    </p>
+
+    <div class="screenshot">
+        <img src="images/ns3-extract.png">
+        <p>Figure 11: Extracted NS-3 Source Directory</p>
+    </div>
+
+    <!-- STEP 3 -->
+    <h3>Step 3: Update System and Install Dependencies</h3>
+    <p>
+        The Ubuntu system is updated and required dependencies are installed
+        to ensure a smooth build process.
+    </p>
+
+    <pre>
+sudo apt update
+sudo apt install -y git python3 python3-dev cmake g++ build-essential pkg-config
+    </pre>
+
+    <div class="screenshot">
+        <img src="images/ns3-update.png">
+        <p>Figure 12: Installing NS-3 Dependencies</p>
+    </div>
+
+    <!-- STEP 4 -->
+    <h3>Step 4: Configure NS-3</h3>
+    <p>
+        The configuration step checks system compatibility and prepares
+        NS-3 for compilation.
+    </p>
+
+    <pre>
+./ns3 configure --enable-examples --enable-tests
+    </pre>
+
+    <div class="screenshot">
+        <img src="images/ns3-configure.png">
+        <p>Figure 13: NS-3 Configuration Output</p>
+    </div>
+
+    <!-- STEP 5 -->
+    <h3>Step 5: Build NS-3</h3>
+    <p>
+        The build process compiles the NS-3 source code and generates
+        executable simulation binaries.
+    </p>
+
+    <pre>
+./ns3 build
+    </pre>
+
+    <div class="screenshot">
+        <img src="images/ns3-build.png">
+        <p>Figure 14: NS-3 Build Completed Successfully</p>
+    </div>
+
+    <!-- ALTERNATIVE METHOD -->
+    <h3>Alternative Build Method (ns-allinone)</h3>
+    <p>
+        NS-3 can also be installed using the ns-allinone package,
+        which automates the download and build process.
+    </p>
+
+    <pre>
+cd ns-allinone-3.45
+./build.py --enable-examples --enable-tests
+    </pre>
+
+    <p>
+        ⏱ <strong>Note:</strong> This process may take 15–30 minutes depending
+        on system specifications.
+    </p>
+</section>
+
+    
+
+<!-- ================= VERIFICATION ================= -->
+<section id="verification">
+    <h2>Section 4: Verification & Output</h2>
+
+    <p>
+        The NS-3 installation is verified by executing a sample simulation program.
+    </p>
+
+    <pre>
+./ns3 run hello-simulator
+    </pre>
+
+    <p>
+        <strong>Success:</strong> If the output displays
+        <em>"Hello Simulator"</em>, NS-3 has been successfully installed.
+    </p>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section id="conclusion">
+    <h2>Conclusion</h2>
+
+    <p>
+        VirtualBox, Ubuntu Linux, and NS-3 were successfully installed and verified.
+        The configured environment provides a strong foundation for performing
+        network simulation experiments in academic and research settings.
+    </p>
+
+    <h3>Learning Outcomes</h3>
+    <ul>
+        <li>Hands-on experience with virtualization tools</li>
+        <li>Understanding Linux-based simulation environments</li>
+        <li>Practical exposure to NS-3 network simulation</li>
+    </ul>
+</section>
+
+<!-- ================= REFERENCES ================= -->
+<section id="references">
+    <h2>References and Documentation</h2>
+
+    <ul>
+        <li>
+            <a href="https://www.nsnam.org/docs/" target="_blank">
+                Official NS-3 Documentation
+            </a>
+        </li>
+        <li>
+            <a href="https://www.nsnam.org/docs/tutorial/" target="_blank">
+                NS-3 Tutorial
+            </a>
+        </li>
+        <li>
+            Online search resources such as
+            <strong>"NS-3 installation tutorial"</strong>
+            provide video-based guides.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>Developed by Divya Rajput (25PGCE024)</p>
+    <p>M.Tech (CE), CSPIT</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
