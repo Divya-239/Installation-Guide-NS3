@@ -33,3 +33,42 @@ This guide covers:
 
 ## 📂 Project Structure
 
+ns3-installation-guide/
+│
+├── index.html # Main website file
+├── style.css # Styling
+├── script.js # Smooth scrolling
+├── images/ # All screenshots
+└── README.md # Project documentation
+
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download this repository
+2. Open `index.html` in any modern web browser
+3. Follow the step-by-step instructions provided on the website
+4. Refer to screenshots for better understanding
+
+---
+
+## 🧪 Verification
+
+The NS-3 installation is verified using the following command:
+
+```bash
+./ns3 run hello-simulator
+
+If the output displays "Hello Simulator", the installation is successful.
+
+References
+
+1) Official NS-3 Documentation
+
+2) NS-3 Tutorial
+
+3) VirtualBox Downloads
+
+4) Ubuntu Desktop
+
