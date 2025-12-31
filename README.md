@@ -31,15 +31,7 @@ This guide covers:
 
 ---
 
-## 📂 Project Structure
 
-ns3-installation-guide/
-│
-├── index.html # Main website file
-├── style.css # Styling
-├── script.js # Smooth scrolling
-├── images/ # All screenshots
-└── README.md # Project documentation
 
 
 ---
